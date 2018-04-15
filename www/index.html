@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/material-components-web.min.css">
+    <link rel="stylesheet" href="css/master.css">
+
+  </head>
+  <body>
+    <div class="ad-mask"></div>
+    <div class="ad-main-header">
+      <span class="ad-logo">PHM</span>
+      <a style="margin-left: auto; margin-right: 8px" role="button" ad-modal-target="about">About Us</a>
+      <a style="margin-right: 8px" role="button" ad-modal-target="admin">Admin</a>
+      <a style="margin-right: 8px" role="button">Sign Out</a>
+    </div>
+    <div class="ad-main-block">
+      <h1>Palm Homes Mgt.</h1>
+      <h1>My home is where I live.</h1>
+      <div class="ad-button-group">
+        <button type="button"  class="ad-button" ad-modal-target="submit">Submit Request</button>
+        <button type="button" class="ad-button" ad-modal-target="featured">Featured Home</button>
+      </div>
+    </div>
+    <div class="ad-footer">
+      <div class="ad-footer-content">
+        Copyright  &copy; 2018. Palm Homes Mgt.
+      </div>
+    </div>
+    <!-- Modals -->
+    <div class="ad-modal" style="display: none" ad-modal="submit">
+      <div class="ad-header">
+        <div class="ad-close" role="button" style="margin-left: auto" ad-close>
+          <i class="ad-icon">
+            <svg viewBox="0 0 24 24">
+                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                <path d="M0 0h24v24H0z" fill="none"/>
+            </svg>
+          </i>
+        </div>
+      </div>
+      <div class="ad-content">
+        <h1>Submit request for application</h1>
+        <div class="ad-form">
+          <div class="ad-row">
+            <div class="ad-col">
+              <!--
+              <div class="ad-control-group">
+                <label for="">Full Name (Required)</label>
+                <div class="ad-controls">
+                  <input type="text" name="" value="">
+                </div>
+              </div>
+              -->
+              <div class="mdc-text-field  mdc-text-field--box" data-demo-no-auto-js style="width: 100%">
+                <input type="text" id="tf-box" class="mdc-text-field__input"
+                       aria-controls="name-validation-message">
+                <label for="tf-box" class="mdc-text-field__label">Full Name*</label>
+                <div class="mdc-line-ripple"></div>
+              </div>
+            </div>
+            <div class="ad-col">
+              <!--
+              <div class="ad-control-group">
+                <label for="">Email (Required)</label>
+                <div class="ad-controls">
+                  <input type="text" name="" value="">
+                </div>
+              </div>
+              -->
+              <div class="mdc-text-field  mdc-text-field--box" data-demo-no-auto-js style="width: 100%">
+                <input type="text" id="tf-box" class="mdc-text-field__input"
+                       aria-controls="name-validation-message">
+                <label for="tf-box" class="mdc-text-field__label">Email*</label>
+                <div class="mdc-line-ripple"></div>
+              </div>
+            </div>
+          </div>
+          <div class="ad-row">
+            <div class="ad-col">
+              <!--
+              <div class="ad-control-group">
+                <label for="">Phone #</label>
+                <div class="ad-controls">
+                  <input type="text" name="" value="">
+                </div>
+              </div>
+            -->
+              <div class="mdc-text-field  mdc-text-field--box" data-demo-no-auto-js style="width: 100%">
+                <input type="text" id="tf-box" class="mdc-text-field__input"
+                       aria-controls="name-validation-message">
+                <label for="tf-box" class="mdc-text-field__label">Phone #*</label>
+                <div class="mdc-line-ripple"></div>
+              </div>
+            </div>
+            <div class="ad-col">
+              <!--
+              <div class="ad-control-group">
+                <label for="">Request Code (Required)</label>
+                <div class="ad-controls">
+                  <input type="text" name="" value="">
+                </div>
+              </div>
+            -->
+              <div class="mdc-text-field mdc-text-field--box mdc-text-field--with-leading-icon" style="width: 100%">
+                <i class="material-icons mdc-text-field__icon" tabindex="0" style="height: 24px">
+                  <svg viewBox="0 0 24 24" width="24" heigh="24">
+                      <path d="M0 0h24v24H0z" fill="none"/>
+                      <path d="M12.65 10C11.83 7.67 9.61 6 7 6c-3.31 0-6 2.69-6 6s2.69 6 6 6c2.61 0 4.83-1.67 5.65-4H17v4h4v-4h2v-4H12.65zM7 14c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
+                  </svg>
+                </i>
+                <input type="text" id="tf-box-leading" class="mdc-text-field__input">
+                <label for="tf-box-leading" class="mdc-text-field__label">Request Code*</label>
+                <div class="mdc-line-ripple"></div>
+              </div>
+            </div>
+          </div>
+          <div class="ad-divider"></div>
+          <div class="ad-button-row">
+            <button class="mdc-button mdc-button--raised" style="margin-left: auto">
+              Submit
+            </button>
+          </div>
+          <!--
+          <div class="ad-button-row">
+            <button type="button" class="ad-button-red" style="margin-left: auto">Submit</button>
+          </div>
+          -->
+        </div>
+      </div>
+    </div>
+    <div class="ad-modal" style="display: none" ad-modal="admin">
+      <div class="ad-header">
+        <div class="ad-close" role="button" style="margin-left: auto" ad-close>
+          <i class="ad-icon">
+            <svg viewBox="0 0 24 24">
+                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                <path d="M0 0h24v24H0z" fill="none"/>
+            </svg>
+          </i>
+        </div>
+      </div>
+      <div class="ad-content">
+        <h1 style="text-align: left; padding-left: 24px">Administrator dashboard</h1>
+          <div class="ad-toolbar">
+            <div class="ad-icon-button" title="Generate code" role="button">
+              <i class="ad-icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 6v3l4-4-4-4v3c-4.42 0-8 3.58-8 8 0 1.57.46 3.03 1.24 4.26L6.7 14.8c-.45-.83-.7-1.79-.7-2.8 0-3.31 2.69-6 6-6zm6.76 1.74L17.3 9.2c.44.84.7 1.79.7 2.8 0 3.31-2.69 6-6 6v-3l-4 4 4 4v-3c4.42 0 8-3.58 8-8 0-1.57-.46-3.03-1.24-4.26z"/>
+                    <path d="M0 0h24v24H0z" fill="none"/>
+                </svg>
+              </i>
+            </div>
+            <div class="ad-divider"></div>
+            <input type="text" name="" value="3" title="Duration period of the code">
+          </div>
+          <div class="ad-messagebar"></div>
+          <div class="ad-grid-container">
+            <table class="ad-grid">
+              <tr>
+                <th>Code</th>
+                <th>Date Generated</th>
+                <th>Duaration Period</th>
+                <th>Expired/Claimed</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone #</th>
+              </tr>
+              <tr>
+                <td>4345</td>
+                <td>01/25/2018</td>
+                <td>3</td>
+                <td>Claimed</td>
+                <td>John Masters</td>
+                <td>j.masters@gmail.com</td>
+                <td>(480) 999 - 8888</td>
+              </tr>
+              <tr>
+                <td>4345</td>
+                <td>01/25/2018</td>
+                <td>3</td>
+                <td>Claimed</td>
+                <td>John Masters</td>
+                <td>j.masters@gmail.com</td>
+                <td>(480) 999 - 8888</td>
+              </tr>
+              <tr>
+                <td>4345</td>
+                <td>01/25/2018</td>
+                <td>3</td>
+                <td>Claimed</td>
+                <td>John Masters</td>
+                <td>j.masters@gmail.com</td>
+                <td>(480) 999 - 8888</td>
+              </tr>
+              <tr>
+                <td>4345</td>
+                <td>01/25/2018</td>
+                <td>3</td>
+                <td>Claimed</td>
+                <td>John Masters</td>
+                <td>j.masters@gmail.com</td>
+                <td>(480) 999 - 8888</td>
+              </tr>
+              <tr>
+                <td>4345</td>
+                <td>01/25/2018</td>
+                <td>3</td>
+                <td>Claimed</td>
+                <td>John Masters</td>
+                <td>j.masters@gmail.com</td>
+                <td>(480) 999 - 8888</td>
+              </tr>
+              <tr>
+                <td>4345</td>
+                <td>01/25/2018</td>
+                <td>3</td>
+                <td>Claimed</td>
+                <td>John Masters</td>
+                <td>j.masters@gmail.com</td>
+                <td>(480) 999 - 8888</td>
+              </tr>
+              <tr>
+                <td>4345</td>
+                <td>01/25/2018</td>
+                <td>3</td>
+                <td>Claimed</td>
+                <td>John Masters</td>
+                <td>j.masters@gmail.com</td>
+                <td>(480) 999 - 8888</td>
+              </tr>
+              <tr>
+                <td>4345</td>
+                <td>01/25/2018</td>
+                <td>3</td>
+                <td>Claimed</td>
+                <td>John Masters</td>
+                <td>j.masters@gmail.com</td>
+                <td>(480) 999 - 8888</td>
+              </tr>
+              <tr>
+                <td>4345</td>
+                <td>01/25/2018</td>
+                <td>3</td>
+                <td>Claimed</td>
+                <td>John Masters</td>
+                <td>j.masters@gmail.com</td>
+                <td>(480) 999 - 8888</td>
+              </tr>
+              <tr>
+                <td>4345</td>
+                <td>01/25/2018</td>
+                <td>3</td>
+                <td>Claimed</td>
+                <td>John Masters</td>
+                <td>j.masters@gmail.com</td>
+                <td>(480) 999 - 8888</td>
+              </tr>
+              <tr>
+                <td>4345</td>
+                <td>01/25/2018</td>
+                <td>3</td>
+                <td>Claimed</td>
+                <td>John Masters</td>
+                <td>j.masters@gmail.com</td>
+                <td>(480) 999 - 8888</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ad-modal" style="display: none" ad-modal="featured">
+      <div class="ad-header">
+        <div class="ad-close" role="button" style="margin-left: auto" ad-close>
+          <i class="ad-icon">
+            <svg viewBox="0 0 24 24">
+                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                <path d="M0 0h24v24H0z" fill="none"/>
+            </svg>
+          </i>
+        </div>
+      </div>
+      <div class="ad-content">
+        <h1 style="margin-bottom: 0px;">Lake Views...</h1>
+        <p>This home is open with a vaulted ceiling and views of the lake, mountain, and fountains…</p>
+        <div class="ad-image-container">
+          <img src="images/fh.jpg" alt="" style="width: 100%">
+        </div>
+      </div>
+    </div>
+    <div class="ad-modal" style="display: none" ad-modal="about">
+      <div class="ad-header">
+        <div class="ad-close" role="button" style="margin-left: auto" ad-close>
+          <i class="ad-icon">
+            <svg viewBox="0 0 24 24">
+                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                <path d="M0 0h24v24H0z" fill="none"/>
+            </svg>
+          </i>
+        </div>
+      </div>
+      <div class="ad-content">
+        <h1 style="margin-bottom: 0px;">About Us</h1>
+        <p>We are about helping people find a home. Home is where you live and feel safe.</p>
+      </div>
+    </div>
+    <script src="js/modal.js" charset="utf-8"></script>
+    <script src="js/material-components-web.min.js" charset="utf-8"></script>
+    <script src="js/main.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+# ADMIN
+
+  Admin functionality will require to sing in. The person will have the "admin"
+  role assigned.
+
+  Admin functionality will consist of admin page. Admin page will have the
+  option to generate the random code. The random code will have date/time
+  stamp and the duration period. After duration period it becomes invalid.
+
+  The generated code will be recorded into the codes table and will stay there.
+
+  The generated code can be used only once and after which it becomes invalid.
+  The flag "claimed" will be recorded to the table.
+
+  The administrator will have option to see the history of all claimed codes.
+
+  The information regarding user name, email, phone #  will be recorded to the
+  table along with the generated code.
+
+
+# MAIN
+
+  Main functionality does not require to sign in.
+
+  Main functionality allow to request the "DOCUMENTS" base on provided code.
+
+  If code is not provided the request will be rejected.

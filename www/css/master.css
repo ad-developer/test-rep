@@ -1,0 +1,344 @@
+html {
+  background: url(../images/i1.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+button,
+[role=button] {
+  cursor: pointer;
+  outline:none;
+}
+input {
+  outline: none;
+}
+.ad-mask {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  top:0px;
+  opacity: 0.3;
+  z-index: 0;
+}
+.ad-main-header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 64px;
+  line-height: 64px;
+  padding-left: 24px;
+  padding-right: 24px;
+  top: 0px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  color: #fff;
+}
+.ad-logo {
+  font-size: 18px;
+  font-weight: 200;
+  letter-spacing: 0.18em;
+}
+.ad-main-header a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 200;
+}
+.ad-main-block {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 140px;
+  color: #fff;
+}
+.ad-main-block h1 {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 64px;
+  line-height: 64px;
+  margin: 0px;
+  padding: 0px;
+  font-size: 40px;
+  font-weight: 200;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+.ad-button-group {
+  display: flex;
+  margin-top: 48px;
+}
+.ad-button {
+  display: inline-block;
+  flex: 1 1 auto;
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  min-width: 175px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #333;
+  border: 1px solid #333;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 200;
+  text-transform: uppercase;
+  transition: all 0.3s linear;
+  opacity: 0.8;
+}
+.ad-button:hover {
+  border-color: #fff;
+}
+.ad-footer {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+  bottom: 16px;
+}
+.ad-footer-content {
+  display: block;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #ccc;
+  font-size: 12px;
+}
+.ad-modal {
+  display: block;
+  position: absolute;
+  width: 940px;
+  min-height: 400px;
+  top: 24px;
+  left: 50%;
+  margin-left: -470px;
+  background-color: #fff;
+}
+.ad-modal .ad-header {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 48px;
+}
+.ad-modal h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 100;
+  letter-spacing: 0.1em;
+  margin-bottom: 48px;
+}
+.ad-modal p {
+  padding-left: 24px;
+  padding-right: 24px;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+
+}
+.ad-close {
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  top: 4px;
+}
+.ad-close:hover svg {
+  fill: #bf0000;
+}
+.ad-icon {
+  display: block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  top: 8px;
+  left: 8px;
+}
+.ad-row,
+.ad-button-row {
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin-bottom: 8px;
+}
+.ad-button-row {
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.ad-control-container {
+  width: auto;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.ad-divider {
+  width: auto;
+  height: 1px;
+  margin: 24px;
+  background-color: #ccc;
+}
+.ad-col {
+  display: inline-block;
+  position: relative;
+  width: 50%;
+  padding-left: 24px;
+  padding-right: 8px;
+}
+.ad-col:last-child {
+  padding-left: 8px;
+  padding-right: 24px;
+}
+.ad-button-red {
+  display: inline-block;
+  min-width: 129px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #c00;
+  font-size: 14px;
+  font-weight: 100;
+  color: #fff;
+  padding-left: 24px;
+  padding-right: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.3s linear;
+}
+.ad-button-red:hover {
+  background-color: #bf0000;
+}
+.ad-control-group {
+  width: 100%;
+}
+.ad-control-group label {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.ad-controls {
+  width: 100%;
+}
+.ad-controls input,
+.ad-controls textarea {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 8px;
+  font-size: 18px;
+  font-weight: 400;
+  border: 1px solid #ccc;
+  background-color: #f7f7f7;
+  color: #666;
+}
+.ad-controls textarea {
+  height: 200px;
+  line-height: 25px;
+  padding-top: 7px;
+}
+.ad-controls input:focus,
+.ad-controls textarea:focus {
+  border-color: #666;
+  outline:none;
+}
+.ad-image-container {
+  width: auto;
+  margin: 24px;
+}
+.ad-toolbar {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  font-size: 12px;
+  font-weight: 300;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  background-color: #fcfcfc;
+}
+.ad-grid-container {
+  display: block;
+  width: 100%;
+}
+.ad-icon-button {
+  display: inline-block;
+  position: relative;
+  height: 26px;
+  width: 26px;
+  line-height: 26px;
+  border-radius: 2px;
+}
+.ad-icon-button:hover {
+  background-color: #eee;
+}
+.ad-icon-button .ad-icon {
+  width: 18px;
+  height: 18px;
+  top: 4px;
+  left: 4px;
+}
+.ad-toolbar .ad-icon-button {
+  top: 5px;
+  margin-right: 3px;
+}
+.ad-toolbar .ad-divider {
+    display: inline-block;
+    position: relative;
+    width: 1px;
+    height: 36px;
+    margin: 0px;
+    margin-right: 3px;
+    background-color: #ccc;
+    top: 0px;
+  }
+.ad-toolbar input {
+  position: relative;
+  height: 26px;
+  width: 26px;
+  line-height: 26px;
+  top: 5px;
+  padding-left: 8px;
+  border: none;
+  background-color: #fcfcfc;
+}
+.ad-toolbar input:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+.ad-grid-container {
+  margin-top: 24px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+.ad-grid {
+  width: 100%;
+}
+.ad-grid tr {
+  height: 48px;
+  border-bottom: 1px solid #ccc;
+}
+.ad-grid tr:hover td {
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+.ad-grid th,
+.ad-grid td {
+  font-size: 13px;
+  font-weight: 300;
+}
+.ad-grid th {
+  font-weight: 700;
+}
+.ad-grid th:first-child,
+.ad-grid td:first-child {
+  padding-left: 24px;
+}
